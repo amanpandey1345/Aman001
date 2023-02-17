@@ -32,7 +32,8 @@
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.4.1",
     "styled-components": "^5.3.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "autoprefixer": "^6.5.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -47,10 +48,10 @@
     ]
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+ "production": [
+      "last 1 version",
+      "> 1%",
+      "not dead"
     ],
     "development": [
       "last 1 chrome version",
