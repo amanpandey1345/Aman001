@@ -22,23 +22,6 @@ const showtime = require("./routes/showtimeRoute")
 const say = require("./routes/sayRoute")
 const showhistory = require("./routes/showhistoryRoute")
 
-// if(process.env.NODE_ENV!=="PRODUCTION"){
-
-//     require("dotenv").config({path:"server/config/config.env"})
-// }
-// const storage= multer.diskStorage({
-//     destination:(req,file,cb)=>{
-//         cb(null,"images");
-//     },
-//     filename:(req,file,cb)=>{
-//         cb(null,"hello.jpg")
-//     }
-// })
-
-// const upload = multer({ storage:storage });
-// app.post("/api/v1/upload",upload.single("file"), (req,res)=>{
-//     res.status(200).json("File has been uploaded")
-// })
 
 app.use("/api/v1",user)
 app.use("/api/v1",bet)
@@ -49,11 +32,6 @@ app.use("/api/v1",showtime)
 app.use("/api/v1",say)
 app.use("/api/v1",showhistory)
 
-app.use(express.static(path.join(__dirname,"../frontend/build")))
-
-app.get("*",(req,res)=>{
-    res.sendFile(path.resolve(__dirname,"../frontend/build/index.html"))
-})
 
 app.use(errorMiddleware)
 
