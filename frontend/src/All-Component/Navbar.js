@@ -27,7 +27,7 @@ function Navbar() {
     setShow(!show)
     dispatch(logout());
     alert.success("Logout Successfully..");
-    window.location.reload(true);
+    // window.location.reload(true);
   }
 
   // const noti = user.notilenth;
