@@ -64,7 +64,7 @@ function Navbar() {
               <i class="fas fa-history"></i> Show history
               </Link>
               <Link to="/Notification" onClick={() => setShow(!show)}>
-                <i class="fas fa-bell"></i><sup style={{ color: "red", fontSize:"12px" }}>{isAuthenticated ? user.notilenth : "0"}</sup> Notification
+                <i class="fas fa-bell"></i><sup style={{ color: "red", fontSize:"12px" }}>{isAuthenticated && user ? user.notilenth : "0"}</sup> Notification
               </Link>
               
               

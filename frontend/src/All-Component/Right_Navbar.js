@@ -64,7 +64,7 @@ function Right_Navbar () {
                      <p> 
                         Hello... <br/>
                         
-                        {isAuthenticated ? user.fname : "User_Name"} 
+                        {isAuthenticated && user ? user.fname : "User_Name"} 
                      </p> 
                         
                      </div>
