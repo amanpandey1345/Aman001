@@ -53,7 +53,7 @@ function Right_Navbar () {
                      <p> 
                         Available <br/>
                          Balance <br/>
-                         <span> &#x20B9;{isAuthenticated ? user.balance : "000"} </span> 
+                         <span> &#x20B9;{isAuthenticated && user.balance ? user.balance : "000"} </span> 
                         
                      </p>
                     

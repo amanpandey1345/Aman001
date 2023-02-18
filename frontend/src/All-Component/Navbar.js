@@ -56,7 +56,7 @@ function Navbar() {
           <div class={`collapse navbar-collapse ${show ? "show" : ""}`}>
             <div class="navbar-nav ms-auto">
 
-            {isAuthenticated && (user.role === "admin" && <Link to="/admin/dashboard" onClick={() => setShow(!show)}> <i class="fas fa-user-circle"></i> Admin </Link>)}
+            {isAuthenticated ? (user.role === "admin" && <Link to="/admin/dashboard" onClick={() => setShow(!show)}> <i class="fas fa-user-circle"></i> Admin </Link>):""}
             <a href="https://instagram.com/rcgamesmail/" target="_black" onClick={() => setShow(!show)} >
             <i class="fab fa-instagram"></i> Instagram
               </a>
